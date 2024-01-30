@@ -3,9 +3,23 @@ import Footer from "./pages/Footer";
 import { useMyContext } from "./Context";
 import AddTask from "./pages/AddTask";
 import EditTask from "./pages/EditTask";
+import { useEffect } from "react";
+import axios from "axios";
 const App: React.FC = () => {
   const { data, add, edit, setAdd, setEdit } = useMyContext()
 
+  useEffect(() => {
+    axios.post('/data.json', {
+      id: 13,
+      title: 'lasha',
+      detail: 'sdfsdf',
+      done: true,
+    }).then((res) => {
+      console.log('hello');
+      console.log(res);
+      
+    })
+  }, [])
   return (
     <div className="w-[768px] h-screen">
       {

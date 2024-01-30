@@ -32,7 +32,7 @@ const Todos: React.FC<Props> = ({ data, setEdit }) => {
                             <div
                                 style={{ boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)' }}
                                 key={index}
-                                className='flex justify-between items-center w-[95%] h-[85px] py-[22px] pl-[19px] pr-[25px] bg-white rounded-[15px] '
+                                className='flex justify-between items-center w-[95%] h-[85px] py-[22px] pl-[19px] pr-[25px] bg-white rounded-[15px]'
                             >
                                 <div>
                                     <h2 className='text-purple-500 font-semibold font-[13px] uppercase mb-[5px]'>
@@ -69,12 +69,11 @@ const Todos: React.FC<Props> = ({ data, setEdit }) => {
                                     <div
                                         className={item.done ? 'bg-purple-500 rounded-full' : 'rounded-full'}
                                         onClick={() => {
-                                            const updatedDoneState = !item.done
                                             const obj = {
                                                 id: item.id,
                                                 title: item.title,
                                                 detail: item.detail,
-                                                done: updatedDoneState
+                                                done: !item.done
                                             }
                                             axios.put(`http://localhost:3000/todos/${item.id}`, obj)
                                                 .then(() => {

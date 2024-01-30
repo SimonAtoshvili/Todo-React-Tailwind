@@ -23,6 +23,8 @@ export default function EditTask() {
         done: done
     }
 
+    console.log(editTodo);
+    
 
     useEffect(() => {
         axios.get(`http://localhost:3000/todos/${idNum}`).then((data2) => {

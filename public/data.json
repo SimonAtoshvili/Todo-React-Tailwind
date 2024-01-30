@@ -1,16 +1,10 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Wake up",
-      "detail": "get up from bed",
-      "done": false
-    },
-    {
       "id": 2,
       "title": "Brush teeth",
-      "detail": "brush your teeth",
-      "done": true
+      "detail": "brush your teethasdfggfdssdfghjhgf",
+      "done": false
     },
     {
       "id": 5,
@@ -19,16 +13,10 @@
       "done": true
     },
     {
-      "id": 7,
-      "title": "dfgh",
-      "detail": "ert4",
-      "done": false
-    },
-    {
+      "id": 9,
       "title": "Sandro",
-      "detail": "fgfdsdfg",
-      "done": true,
-      "id": 9
+      "detail": "Atoshvilifghgd",
+      "done": false
     },
     {
       "id": 10,
@@ -37,10 +25,10 @@
       "done": false
     },
     {
-      "title": "axali",
-      "detail": "hggh",
-      "done": false,
-      "id": 11
+      "id": 13,
+      "title": "anar",
+      "detail": "aliev 36",
+      "done": false
     }
   ]
 }
